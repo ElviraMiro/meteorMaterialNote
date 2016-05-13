@@ -1,10 +1,10 @@
 Package.describe({
-    name: 'cerealkiller:materialnote',
+    name: 'karashistka:materialnote',
     version: '1.2.1',
     // Brief, one-line summary of the package.
     summary: 'materialNote wysiwyg editor for meteor',
     // URL to the Git repository containing the source code for this package.
-    git: 'https://github.com/Cerealkillerway/meteorMaterialNote',
+    git: 'https://github.com/ElviraMiro/meteorMaterialNote.git',
     // By default, Meteor will default to using README.md for documentation.
     // To avoid submitting documentation, set this field to null.
     documentation: 'README.md'
@@ -33,6 +33,7 @@ Package.onUse(function(api) {
     api.addFiles('lib/codeMirror/editor/codemirror.js', 'client');
     api.addFiles('lib/codeMirror/xml.js', 'client');
     api.addFiles('lib/materialNote.js', 'client');
+    api.addFiles('lib/cktooltip.js', 'client');
 
     // i18n
     api.addFiles('i18n/generalI18n.js', 'client');
@@ -41,7 +42,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
     api.use('tinytest');
-    api.use('cerealkiller:materialnote');
+    api.use('karashistka:materialnote');
     api.addFiles('materialnote-tests.js');
 });
 
