@@ -1,4 +1,5 @@
 # MaterialNote meteor package
+forked from Cerealkillerway/meteorMaterialNote (ckTooltips error resolved)
 A meteor package version of materialNote (wysiwyg for the web based on summernote.js and materialize)
 
 See:
